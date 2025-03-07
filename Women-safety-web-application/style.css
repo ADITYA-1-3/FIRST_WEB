@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Bellefair&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Bellefair", arial, sans-serif;
+      background: #f5f5f5 url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Amarante", sans-serif;
+      color: #5d3f96;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #9932cc;
+    }
+
+    /* Layout */
+    #header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+    }
+
+    #logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #logo h1 {
+      font-size: 3rem;
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Navbar */
+    #menubar {
+      background-color: #000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #menubar ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    #menubar ul li {
+      margin: 0 15px;
+    }
+
+    #menubar ul li a {
+      color: #fff;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    #menubar ul li a:hover {
+      background-color: #5d3f96;
+    }
+
+    /* Content */
+    #site_content {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      float: right;
+      width: 250px;
+      padding: 15px;
+      background-color: #f7f7f7;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .sidebar li a {
+      display: block;
+      padding: 10px;
+      background-color: #5d3f96;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar li a:hover {
+      background-color: #3e2b6f;
+    }
+
+    /* Footer */
+    #footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #footer a {
+      color: #fff;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    #footer a:hover {
+      color: #9932cc;
+    }
+
+    /* Form Settings */
+    .form_settings input,
+    .form_settings textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form_settings .submit {
+      width: 100%;
+      padding: 12px;
+      background-color: #5d3f96;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form_settings .submit:hover {
+      background-color: #3e2b6f;
+    }
+
+    /* Image Zoom Effect */
+    .zoomimage {
+      text-align: center;
+      padding: 30px;
+      transition: transform 0.5s ease;
+    }
+
+    .zoomimage:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      #logo h1 {
+        font-size: 2.5rem;
+      }
+
+      #menubar ul {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      #menubar ul li {
+        margin: 10px 0;
+      }
+
+      .sidebar {
+        float: none;
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div id="logo">
+      <h1>Your Modern UI</h1>
+    </div>
+  </div>
+
+  <div id="menubar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="site_content">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Sidebar Item 1</a></li>
+        <li><a href="#">Sidebar Item 2</a></li>
+        <li><a href="#">Sidebar Item 3</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h2>Welcome to Modern UI</h2>
+      <p>This is a modern, responsive design using Flexbox, smooth transitions, and hover effects.</p>
+      <div class="zoomimage">
+        <img src="image.jpg" alt="Zoomable Image">
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </p>
+  </div>
+</body>
+</html>
